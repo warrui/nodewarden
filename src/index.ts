@@ -31,6 +31,7 @@ function isWorkerHandledPath(path: string): boolean {
   );
 }
 
+
 function addSearchIndexHeaders(request: Request, response: Response): Response {
   const url = new URL(request.url);
   const contentType = String(response.headers.get('Content-Type') || '').toLowerCase();
